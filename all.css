@@ -1,6 +1,28 @@
-@import url(reset.scss);
+@import url(reset.css);
 t body {
+  font-family: "Noto Sans TC", sans-serif;
   box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  font-family: "Noto Sans TC", sans-serif;
+  justify-content: center;
+}
+.header img {
+  position: absolute;
+  left: 0;
+}
+.header ul {
+  display: flex;
+}
+.header ul li {
+  list-style-type: none;
+  margin-right: 40px;
+}
+.header ul li a {
+  color: #3B3B3B;
+  text-decoration: none;
 }
 
 .wrap {
@@ -9,7 +31,6 @@ t body {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  font-family: "Noto Sans TC", sans-serif;
 }
 .wrap .card {
   padding-right: 24px;
@@ -38,6 +59,8 @@ t body {
   color: #919191;
 }
 .wrap .card .tags {
+  margin-left: 16px;
+  font-family: "Noto Sans TC", sans-serif;
   display: flex;
 }
 .wrap .card .tags li {

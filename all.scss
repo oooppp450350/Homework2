@@ -1,7 +1,29 @@
-@import url(reset.scss);t
+@import url(reset.css);t
+
 body{
- 
+    font-family: "Noto Sans TC", sans-serif;
     box-sizing:border-box;
+  }
+  .header{
+    display: flex;
+    font-family: "Noto Sans TC", sans-serif;
+    justify-content: center;
+    img{
+        position:absolute;
+        left:0;
+    }
+    ul{
+        display: flex;
+
+        li{
+            list-style-type: none;
+            margin-right: 40px;
+            a{
+            color: #3B3B3B;
+            text-decoration: none;
+            }
+        }
+    }
   }
   .wrap{
     margin-top: 72px;
@@ -9,7 +31,7 @@ body{
    justify-content: center;
     display:flex;
     flex-wrap: wrap;
-     font-family: "Noto Sans TC", sans-serif;
+
      .card{
         padding-right: 24px;
         padding-bottom: 80px;
@@ -36,19 +58,20 @@ body{
             margin-bottom: 24px;
             color: #919191;
             }
-            .tags{
+        .tags{
+            margin-left: 16px;
+            font-family: "Noto Sans TC", sans-serif;    
+            display: flex;
+            li{
                 
-                display: flex;
-              li{
-                
-                list-style-type: none;
-                margin-right: 16px;
-                background-color: #F1F1F1;
-                padding-left: 12px;
-                padding-right: 12px;
-                padding-top: 4px;
-                padding-bottom: 4px;
-                border-radius: 16px;
+            list-style-type: none;
+            margin-right: 16px;
+            background-color: #F1F1F1;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border-radius: 16px;
               }    
               }
               
