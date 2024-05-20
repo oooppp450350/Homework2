@@ -42,13 +42,13 @@ t *,
   width: 8px;
   height: 8px;
 }
+.header ul li .Border:hover {
+  border-top: 1px solid #919191;
+  border-right: 1px solid #919191;
+}
 .header ul li .lt {
   top: 0;
   right: 0;
-}
-.header ul li .lt:hover {
-  border-top: 1px solid #919191;
-  border-right: 1px solid #919191;
 }
 
 .HeroSection {

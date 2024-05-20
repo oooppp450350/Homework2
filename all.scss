@@ -35,44 +35,36 @@
         align-items: center;
         gap:40px;
         justify-content: space-between;
-        position: relative;
+        
 
         li{
             list-style-type: none;
             padding: 4px 8px;
-            // margin-right: 40px;
+            position: relative;
+            &:hover .lt{
+              border-top: 1px 
+              solid #919191;
+              border-right: 1px
+              solid #919191;
+              }
             a{
             color: #3B3B3B;
             text-decoration: none;
             line-height: 24px;
-            
             }
             .Border {
                 position: absolute;
                 width: 8px;
-                height: 8px;
+                height: 8px; 
               }
                 .lt{
                     top: 0;
-                    right: 0;
-                    &:hover {
-                        border-top: 1px 
-                    solid #919191;
-                        border-right: 1px 
-                    solid #919191;
-                    }
-                }
-                
-                
-                
-                
-            
-           
-
-
-        }
+                    right: 0; 
+                }            
+                } //li                                 
+        }//ul.menu
     }
-  }
+  
   .HeroSection{
     display: flex;
     flex-direction: column;
