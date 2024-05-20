@@ -37,7 +37,7 @@
         justify-content: space-between;
         
 
-        li{
+        .navitem{
             list-style-type: none;
             padding: 4px 8px;
             position: relative;
@@ -70,7 +70,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  .blockquote{
+  blockquote{
     display: flex;
     flex-direction: column;
     justify-content: center;
