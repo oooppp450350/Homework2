@@ -1,26 +1,48 @@
 @import url(reset.css);t
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
 
-body{
-    font-family: "Noto Sans TC", sans-serif;
-    box-sizing:border-box;
+}
+// body{
+//     font-family: "Noto Sans TC", sans-serif;
+//     box-sizing:border-box;
   }
   .header{
     display: flex;
     font-family: "Noto Sans TC", sans-serif;
     justify-content: center;
+    // align-items: center;
+    padding: 28px ;
+    
+
     img{
-        position:absolute;
-        left:0;
+        // position: absolute;
+        // left: 312px;
+        // top:30px;
+        margin-left: 312px;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        // margin-left: 318px;
     }
     ul{
         display: flex;
+        align-items: center;
 
         li{
             list-style-type: none;
+            padding: 4px 8px;
             margin-right: 40px;
             a{
             color: #3B3B3B;
             text-decoration: none;
+            line-height: 24px;
+            
             }
         }
     }

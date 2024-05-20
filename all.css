@@ -8,21 +8,30 @@ t body {
   display: flex;
   font-family: "Noto Sans TC", sans-serif;
   justify-content: center;
+  padding: 28px;
 }
-.header img {
+.header .logo {
   position: absolute;
-  left: 0;
+  left: 10px;
+  top: 10px;
+}
+.header nav {
+  display: flex;
+  align-items: center;
 }
 .header ul {
   display: flex;
+  align-items: center;
 }
 .header ul li {
   list-style-type: none;
+  padding: 4px 8px;
   margin-right: 40px;
 }
 .header ul li a {
   color: #3B3B3B;
   text-decoration: none;
+  line-height: 24px;
 }
 
 .wrap {
