@@ -9,7 +9,7 @@
 // body{
 //     font-family: "Noto Sans TC", sans-serif;
 //     box-sizing:border-box;
-  }
+  
   .header{
     display: flex;
     font-family: "Noto Sans TC", sans-serif;
@@ -18,11 +18,11 @@
     padding: 28px ;
     
 
-    img{
-        // position: absolute;
-        // left: 312px;
-        // top:30px;
-        margin-left: 312px;
+    .logo{
+        position: absolute;
+        left: 312px;
+        top:28px;
+        // margin-left: 312px;
     }
 
     nav{
