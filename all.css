@@ -24,16 +24,31 @@ t *,
 .header ul {
   display: flex;
   align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+  position: relative;
 }
 .header ul li {
   list-style-type: none;
   padding: 4px 8px;
-  margin-right: 40px;
 }
 .header ul li a {
   color: #3B3B3B;
   text-decoration: none;
   line-height: 24px;
+}
+.header ul li .Border {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+}
+.header ul li .lt {
+  top: 0;
+  right: 0;
+}
+.header ul li .lt:hover {
+  border-top: 1px solid #919191;
+  border-right: 1px solid #919191;
 }
 
 .wrap {

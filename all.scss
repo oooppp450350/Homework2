@@ -28,25 +28,52 @@
     nav{
         display: flex;
         align-items: center;
-        // margin-left: 318px;
+        
     }
     ul{
         display: flex;
         align-items: center;
+        gap:40px;
+        justify-content: space-between;
+        position: relative;
 
         li{
             list-style-type: none;
             padding: 4px 8px;
-            margin-right: 40px;
+            // margin-right: 40px;
             a{
             color: #3B3B3B;
             text-decoration: none;
             line-height: 24px;
             
             }
+            .Border {
+                position: absolute;
+                width: 8px;
+                height: 8px;
+              }
+                .lt{
+                    top: 0;
+                    right: 0;
+                    &:hover {
+                        border-top: 1px 
+                    solid #919191;
+                        border-right: 1px 
+                    solid #919191;
+                    }
+                }
+                
+                
+                
+                
+            
+           
+
+
         }
     }
   }
+  //中間的卡片
   .wrap{
     margin-top: 72px;
     max-width: 1920px;
