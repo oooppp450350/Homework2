@@ -51,6 +51,18 @@ t *,
   border-right: 1px solid #919191;
 }
 
+.HeroSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blockquote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .wrap {
   margin-top: 72px;
   max-width: 1920px;

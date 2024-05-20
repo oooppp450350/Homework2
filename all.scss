@@ -73,6 +73,17 @@
         }
     }
   }
+  .HeroSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .blockquote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
   //中間的卡片
   .wrap{
     margin-top: 72px;
