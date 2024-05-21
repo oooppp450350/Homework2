@@ -10,6 +10,7 @@ body{
     font-family: "Noto Sans TC", sans-serif;
   
   .header{
+
     display: flex;
     
     justify-content: center;
@@ -19,13 +20,17 @@ body{
 
     .logo{
         position: absolute;
-        left: 312px;
+        // top: -3.5px;
+        left: 200px;
         top:28px;
-        // margin-left: 312px;
+          
+        }
     }
 
     nav{
         display: flex;
+        position: relative;
+      
         align-items: center;
         
     }
@@ -110,6 +115,18 @@ body{
       font-size: 24px;
       font-weight: 400px;
       line-height: 28.8px;
+
+    span{
+        position: relative;
+        z-index: 0;
+        }
+    .textmark {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
       // .slogan{
       // display: flex;
       // flex-direction: column;
@@ -124,24 +141,16 @@ body{
       .quote-left{
         display: block;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: -40px;
+        left: -10px;
       }
       .quote-right{
         display: block;
 
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 40px;
+        right: 20px;
 
-      }
-      .textmark{
-        
-        z-index: -1;
-        // right: -13px;
-        // left: 10%;
-        // bottom: -0.5px;
-        // transform: translateX(-50%);
       }
     }  
   }      
@@ -200,4 +209,8 @@ body{
               
   }
 }
+@media(max-width: 1135px;){
+  .logo{
+    left:50px
   }
+}
