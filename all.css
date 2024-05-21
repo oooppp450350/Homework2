@@ -3,84 +3,131 @@ t *,
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Noto Sans TC", sans-serif;
 }
 
-.header {
-  display: flex;
+body {
   font-family: "Noto Sans TC", sans-serif;
+}
+body .header {
+  display: flex;
   justify-content: center;
   padding: 28px;
 }
-.header .logo {
+body .header .logo {
   position: absolute;
   left: 312px;
   top: 28px;
 }
-.header nav {
+body .header nav {
   display: flex;
   align-items: center;
 }
-.header ul {
+body .header ul {
   display: flex;
   align-items: center;
   gap: 40px;
   justify-content: space-between;
-  position: relative;
 }
-.header ul li {
+body .header ul li {
   list-style-type: none;
   padding: 4px 8px;
+  position: relative;
 }
-.header ul li a {
+body .header ul li a {
   color: #3B3B3B;
   text-decoration: none;
   line-height: 24px;
 }
-.header ul li .Border {
+body .header ul li .Border {
   position: absolute;
   width: 8px;
   height: 8px;
 }
-.header ul li .Border:hover {
-  border-top: 1px solid #919191;
-  border-right: 1px solid #919191;
+body .header ul li .lt {
+  top: 0;
+  left: 0;
 }
-.header ul li .lt {
+body .header ul li .rt {
   top: 0;
   right: 0;
 }
-
-.HeroSection {
+body .header ul li .lb {
+  bottom: 0;
+  left: 0;
+}
+body .header ul li .rb {
+  right: 0;
+  bottom: 0;
+}
+body .header ul li:hover .lt {
+  border-top: 1px solid #919191;
+  border-left: 1px solid #919191;
+}
+body .header ul li:hover .rt {
+  border-top: 1px solid #919191;
+  border-right: 1px solid #919191;
+}
+body .header ul li:hover .lb {
+  border-bottom: 1px solid #919191;
+  border-left: 1px solid #919191;
+}
+body .header ul li:hover .rb {
+  border-right: 1px solid #919191;
+  border-bottom: 1px solid #919191;
+}
+body .HeroSection {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  height: 460px;
+  background-color: #FAFAFA;
 }
-
-.blockquote {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+body .HeroSection blockquote {
+  height: 192px;
+  width: 670px;
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400px;
+  line-height: 28.8px;
 }
-
-.wrap {
+body .HeroSection blockquote .First_slogan {
+  margin-bottom: 16px;
+}
+body .HeroSection blockquote .quote-left {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .HeroSection blockquote .quote-right {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+body .HeroSection blockquote .textmark {
+  z-index: -1;
+}
+body .wrap {
   margin-top: 72px;
   max-width: 1920px;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
-.wrap .card {
+body .wrap .card {
   padding-right: 24px;
   padding-bottom: 80px;
 }
-.wrap .card img {
+body .wrap .card img {
   width: 636px;
   height: 400px;
   border-radius: 8px;
   margin-bottom: 16px;
 }
-.wrap .card h3 {
+body .wrap .card h3 {
   font-size: 28px;
   color: #3B3B3B;
   font-weight: 700;
@@ -88,7 +135,7 @@ t *,
   margin-left: 16px;
   margin-bottom: 8px;
 }
-.wrap .card p {
+body .wrap .card p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -96,12 +143,12 @@ t *,
   margin-bottom: 24px;
   color: #919191;
 }
-.wrap .card .tags {
+body .wrap .card .tags {
   margin-left: 16px;
   font-family: "Noto Sans TC", sans-serif;
   display: flex;
 }
-.wrap .card .tags li {
+body .wrap .card .tags li {
   list-style-type: none;
   margin-right: 16px;
   background-color: #F1F1F1;
