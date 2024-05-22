@@ -3,6 +3,7 @@ t *,
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 body {
@@ -10,69 +11,69 @@ body {
 }
 body .header {
   display: flex;
-  justify-content: center;
-  padding: 28px;
-}
-body .header .logo {
-  position: absolute;
-  left: 200px;
-  top: 28px;
+  justify-content: space-between;
+  padding: 28px 250px;
+  position: sticky;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  top: 0;
+  z-index: 999;
 }
 body nav {
   display: flex;
   position: relative;
   align-items: center;
 }
-body ul {
+body .menu {
   display: flex;
   align-items: center;
   gap: 40px;
   justify-content: space-between;
 }
-body ul li {
+body .menu li {
   list-style-type: none;
   padding: 4px 8px;
   position: relative;
 }
-body ul li a {
+body .menu li a {
   color: #3B3B3B;
   text-decoration: none;
   line-height: 24px;
 }
-body ul li .Border {
+body .menu li .Border {
   position: absolute;
   width: 8px;
   height: 8px;
 }
-body ul li .lt {
+body .menu li .lt {
   top: 0;
   left: 0;
 }
-body ul li .rt {
+body .menu li .rt {
   top: 0;
   right: 0;
 }
-body ul li .lb {
+body .menu li .lb {
   bottom: 0;
   left: 0;
 }
-body ul li .rb {
+body .menu li .rb {
   right: 0;
   bottom: 0;
 }
-body ul li:hover .lt {
+body .menu li:hover .lt {
   border-top: 1px solid #919191;
   border-left: 1px solid #919191;
 }
-body ul li:hover .rt {
+body .menu li:hover .rt {
   border-top: 1px solid #919191;
   border-right: 1px solid #919191;
 }
-body ul li:hover .lb {
+body .menu li:hover .lb {
   border-bottom: 1px solid #919191;
   border-left: 1px solid #919191;
 }
-body ul li:hover .rb {
+body .menu li:hover .rb {
   border-right: 1px solid #919191;
   border-bottom: 1px solid #919191;
 }
@@ -85,6 +86,16 @@ body ul li:hover .rb {
   height: 460px;
   background-color: #FAFAFA;
 }
+.HeroSection .BC {
+  display: flex;
+  line-height: 24px;
+}
+.HeroSection .BC .B {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .HeroSection blockquote {
   height: 192px;
   width: 670px;
@@ -93,6 +104,7 @@ body ul li:hover .rb {
   font-size: 24px;
   font-weight: 400px;
   line-height: 28.8px;
+  padding: 70px 0px 0px 0px;
 }
 .HeroSection blockquote span {
   position: relative;
@@ -111,14 +123,43 @@ body ul li:hover .rb {
 .HeroSection blockquote .quote-left {
   display: block;
   position: absolute;
-  top: -40px;
-  left: -10px;
+  top: 0;
+  left: 0;
 }
 .HeroSection blockquote .quote-right {
   display: block;
   position: absolute;
-  bottom: 40px;
-  right: 20px;
+  bottom: 0px;
+  right: 0px;
+}
+.HeroSection .BC {
+  display: flex;
+  line-height: 24px;
+  width: 100%;
+  max-width: 636px;
+  gap: 40px;
+}
+.HeroSection .BC h3 {
+  color: #5B5B5B;
+}
+.HeroSection .BC .BL {
+  width: 24px;
+  border: 2px solid #C1C1C1;
+}
+.HeroSection .BC p {
+  color: #3B3B3B;
+}
+.HeroSection .BC .B {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.HeroSection .BC .C {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrap {
@@ -158,6 +199,7 @@ body ul li:hover .rb {
   margin-left: 16px;
   font-family: "Noto Sans TC", sans-serif;
   display: flex;
+  justify-content: start;
 }
 .wrap .card .tags li {
   list-style-type: none;
@@ -168,4 +210,43 @@ body ul li:hover .rb {
   padding-top: 4px;
   padding-bottom: 4px;
   border-radius: 16px;
+}
+
+.PNList {
+  display: flex;
+  justify-content: center;
+}
+.PNList .PN {
+  text-align: center;
+  margin-right: 16px;
+}
+.PNList .PN .N1 {
+  background: #000;
+  color: #F1F1F1;
+}
+.PNList .PN a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 2px 4px;
+  width: 40px;
+  height: 40px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.PNList .PN a:hover {
+  background: #000;
+  color: #F1F1F1;
+}
+
+.Footer_zone {
+  height: 424px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("./img/footer-bg-lg.webp");
+  margin-top: 120px;
 }/*# sourceMappingURL=all.css.map */
