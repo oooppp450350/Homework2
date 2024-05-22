@@ -91,7 +91,7 @@ body ul li:hover .rb {
   position: relative;
   text-align: center;
   font-size: 24px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 28.8px;
 }
 .HeroSection blockquote span {
