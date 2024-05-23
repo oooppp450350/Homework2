@@ -308,4 +308,55 @@ body .menu li:hover .rb {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+@media (max-width: 576px) {
+  .header {
+    width: 100%;
+    padding: 8px 12px;
+    position: sticky;
+  }
+  .header .logo {
+    width: 74px;
+    height: 33px;
+  }
+  .header nav {
+    display: none;
+  }
+  .HeroSection {
+    width: 100%;
+  }
+  .HeroSection blockquote {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .HeroSection .BC {
+    width: 235px;
+    flex-wrap: wrap;
+  }
+  .wrap {
+    max-width: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wrap .card .tags {
+    width: 100%;
+  }
+  .Footer_zone {
+    width: 100%;
+  }
+  .Footer_zone .FT_Text_Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .Footer_zone .SocialMediaBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=all.css.map */
