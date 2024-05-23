@@ -12,7 +12,8 @@ body {
 body .header {
   display: flex;
   justify-content: space-between;
-  padding: 28px 250px;
+  max-width: 1296px;
+  padding: 28px 150px;
   position: sticky;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -250,7 +251,7 @@ body .menu li:hover .rb {
   background-image: url("./img/footer-bg-lg.webp");
   background-size: cover;
   margin-top: 120px;
-  padding: 80px 12px;
+  padding: 80px 30px;
 }
 .Footer_zone .Footer_elements {
   display: flex;
@@ -282,16 +283,29 @@ body .menu li:hover .rb {
   border-radius: 8px;
   padding: 3px 24px;
   margin-bottom: 24px;
+  text-decoration: none;
   font-size: 20px;
   line-height: 30px;
   display: flex;
   align-items: center;
-  text-decoration: none;
   color: #3B3B3B;
   border: 1px solid #C1C1C1;
   background-color: #FFFFFF;
 }
+.Footer_zone .Footer_elements .SocialMediaBox .btn img {
+  margin-right: 15px;
+}
 .Footer_zone .Footer_elements .SocialMediaBox .BlackList {
   background-color: #000;
   color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 28px 20px;
+  }
+  .header .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=all.css.map */
