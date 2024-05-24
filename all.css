@@ -20,6 +20,9 @@ body .header {
   top: 0;
   z-index: 999;
 }
+body .MobileMenu {
+  display: none;
+}
 body nav {
   display: flex;
   position: relative;
@@ -314,6 +317,9 @@ body .menu li:hover .rb {
     width: 100%;
     padding: 8px 12px;
     position: sticky;
+  }
+  .header .MobileMenu {
+    display: block;
   }
   .header .logo {
     width: 74px;
