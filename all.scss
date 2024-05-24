@@ -32,7 +32,9 @@ body{
           
     //     }
     }
-
+    .MobileMenu{
+      display: none;
+    }
     nav{
         display: flex;
         position: relative;
@@ -384,6 +386,10 @@ body{
   width: 100%;  
   padding: 8px 12px;
   position: sticky;
+  .MobileMenu{
+    display: block;
+  }
+
   .logo{
     width: 74px;
     height: 33px;
