@@ -20,7 +20,7 @@ body .header {
   top: 0;
   z-index: 999;
 }
-body .MobileMenu {
+body .header .MobileMenu {
   display: none;
 }
 body nav {
@@ -312,11 +312,11 @@ body .menu li:hover .rb {
     justify-content: center;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 550px) {
   .header {
-    width: 100%;
-    padding: 8px 12px;
+    max-width: 100%;
     position: sticky;
+    justify-content: space-between;
   }
   .header .MobileMenu {
     display: block;
@@ -329,39 +329,68 @@ body .menu li:hover .rb {
     display: none;
   }
   .HeroSection {
+    font-size: 85%;
     width: 100%;
   }
   .HeroSection blockquote {
-    width: 300px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .HeroSection .BC {
-    width: 235px;
+  .HeroSection blockquote .quote-left {
+    display: none;
+  }
+  .HeroSection blockquote .quote-right {
+    display: none;
+  }
+  .HeroSection blockquote .BC {
+    max-width: 100%;
+    display: flex;
     flex-wrap: wrap;
   }
   .wrap {
-    max-width: 355px;
     display: flex;
+    width: 100%;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
-  .wrap .card .tags {
+  .wrap .card {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrap .card img {
     width: 100%;
+    height: auto;
+  }
+  .wrap .card .tag {
+    font-size: 14px;
   }
   .Footer_zone {
-    width: 100%;
+    max-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Footer_zone .Footer_elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .Footer_zone .FT_Text_Box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
   }
   .Footer_zone .SocialMediaBox {
     display: flex;
+    margin-top: 20px;
     flex-direction: column;
     align-items: center;
   }
