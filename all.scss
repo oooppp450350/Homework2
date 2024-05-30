@@ -23,6 +23,12 @@ body{
     backdrop-filter: blur(5px);
     top: 0;
     z-index: 999;
+    
+      .close{
+        display: none;
+      }
+  
+    
 
     // .logo{
     //     position: absolute;
@@ -33,14 +39,8 @@ body{
     //     }
     }
 
-    nav{
-        display: flex;
+    .Nav-bar{
         position: relative;
-      
-        align-items: center;
-        
-    }
-    .menu{
         display: flex;
         align-items: center;
         gap:40px;
@@ -370,80 +370,153 @@ body{
   }
   
 @media(max-width:1024px){
-  .header{
-    .menu{
-      flex-wrap: wrap;
-      justify-content: center;
+  body{
+    .header{
+      .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      padding: 28px 20px;
     }
-    padding: 28px 20px;
+  
   }
   
 }
-@media(max-width:576px){
+@media(max-width:768px){
+ body{
   .header{
-  width: 100%;  
-  padding: 8px 12px;
-  position: sticky;
-  .logo{
-    width: 74px;
-    height: 33px;
-  }
-  nav{
-    display: none;
-  }
-  }
-  .HeroSection{
-    // flex-wrap: wrap;
-    // display: flex;
-    // flex-direction: column;
-    // 
-    width: 100%;
-    blockquote{
-      width: 300px;
-      display: flex;
+    // max-width: 100%;  
+    padding:10px 30px 10px 30px;
+    position: sticky;
+    justify-content: space-between;
+  
+    .hamburger{
+    
+      display: block;
+     .hamburger-close{
+      height: 28px;
+      width: 28px;
+     }
+    }
+    .logo{
+      width: 74px;
+      height: 33px;
+    }
+    .Nav-bar{
+      display: none;
       flex-direction: column;
-      flex-wrap: wrap; 
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      li{
+        a{
+          &:hover{
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .Nav-bar.active{
+      display: flex;
+      
+    }
+    }
+    .HeroSection{
+      // font-size:100%;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // 
+      padding: 30px 30px;
+      // width: 100%;
+      blockquote{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+        .quote-left{
+          display: block;
+          // position: absolute;
+          // // top: -40px;
+          // // left: -10px;
+          // top: 50%;
+          left: 45%;
+        }
+        .quote-right{
+          display: none;
+          // position: absolute;
+          // bottom: 50px;
+          // right: 50px;
+      }
+    
     }
     .BC{
-      width: 235px;
-      flex-wrap: wrap;
-    }
-  }
-  .wrap{
-    max-width: 355px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   .card{
-    
-    // img{
-    //   width: 355px;
-    // }
-    .tags{
-      width: 100%;
-    }
-   } 
-  }
-  .Footer_zone{
-    // .Footer_elements{
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-items: center;
-    
-    // }
-    width: 100%;
-    .FT_Text_Box{
-      //如何調整background-image的圖片大小
+      // width: 100px;
+      // max-width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 50px;
-      text-align: center;
+      padding: 0px 20px 30px 30px;
     }
-    .SocialMediaBox{
+
+
+    }
+    .wrap{
+      display: flex;
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+
+
+      .card{
+        width: 80%;
+        align-self: center;
+        img{
+
+          width: 100%;
+          height: auto;
+          
+        }
+        .tag{
+          font-size: 14px;
+          width: 100%;
+        }
+      }
+
+      
+    }
+    .Footer_zone{
+      max-width: 100%;
+      .Footer_elements{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+      }
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
+  
+      .FT_Text_Box{
+        //如何調整background-image的圖片大小
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .SocialMediaBox{
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+      }
     }
+
+ }
   }
-}
+

@@ -20,61 +20,60 @@ body .header {
   top: 0;
   z-index: 999;
 }
-body nav {
-  display: flex;
-  position: relative;
-  align-items: center;
+body .header .close {
+  display: none;
 }
-body .menu {
+body .Nav-bar {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 40px;
   justify-content: space-between;
 }
-body .menu li {
+body .Nav-bar li {
   list-style-type: none;
   padding: 4px 8px;
   position: relative;
 }
-body .menu li a {
+body .Nav-bar li a {
   color: #3B3B3B;
   text-decoration: none;
   line-height: 24px;
 }
-body .menu li .Border {
+body .Nav-bar li .Border {
   position: absolute;
   width: 8px;
   height: 8px;
 }
-body .menu li .lt {
+body .Nav-bar li .lt {
   top: 0;
   left: 0;
 }
-body .menu li .rt {
+body .Nav-bar li .rt {
   top: 0;
   right: 0;
 }
-body .menu li .lb {
+body .Nav-bar li .lb {
   bottom: 0;
   left: 0;
 }
-body .menu li .rb {
+body .Nav-bar li .rb {
   right: 0;
   bottom: 0;
 }
-body .menu li:hover .lt {
+body .Nav-bar li:hover .lt {
   border-top: 1px solid #919191;
   border-left: 1px solid #919191;
 }
-body .menu li:hover .rt {
+body .Nav-bar li:hover .rt {
   border-top: 1px solid #919191;
   border-right: 1px solid #919191;
 }
-body .menu li:hover .lb {
+body .Nav-bar li:hover .lb {
   border-bottom: 1px solid #919191;
   border-left: 1px solid #919191;
 }
-body .menu li:hover .rb {
+body .Nav-bar li:hover .rb {
   border-right: 1px solid #919191;
   border-bottom: 1px solid #919191;
 }
@@ -301,61 +300,107 @@ body .menu li:hover .rb {
 }
 
 @media (max-width: 1024px) {
-  .header {
+  body .header {
     padding: 28px 20px;
   }
-  .header .menu {
+  body .header .menu {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
-@media (max-width: 576px) {
-  .header {
-    width: 100%;
-    padding: 8px 12px;
+@media (max-width: 768px) {
+  body .header {
+    padding: 10px 30px 10px 30px;
     position: sticky;
+    justify-content: space-between;
   }
-  .header .logo {
+  body .header .hamburger {
+    display: block;
+  }
+  body .header .hamburger .hamburger-close {
+    height: 28px;
+    width: 28px;
+  }
+  body .header .logo {
     width: 74px;
     height: 33px;
   }
-  .header nav {
+  body .header .Nav-bar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  body .header .Nav-bar li a:hover {
+    font-weight: bold;
+  }
+  body .header .Nav-bar.active {
+    display: flex;
+  }
+  body .HeroSection {
+    padding: 30px 30px;
+  }
+  body .HeroSection blockquote {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body .HeroSection blockquote .quote-left {
+    display: block;
+    left: 45%;
+  }
+  body .HeroSection blockquote .quote-right {
     display: none;
   }
-  .HeroSection {
-    width: 100%;
-  }
-  .HeroSection blockquote {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .HeroSection .BC {
-    width: 235px;
-    flex-wrap: wrap;
-  }
-  .wrap {
-    max-width: 355px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .wrap .card .tags {
-    width: 100%;
-  }
-  .Footer_zone {
-    width: 100%;
-  }
-  .Footer_zone .FT_Text_Box {
+  body .HeroSection .BC {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    padding: 0px 20px 30px 30px;
+  }
+  body .wrap {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .wrap .card {
+    width: 80%;
+    align-self: center;
+  }
+  body .wrap .card img {
+    width: 100%;
+    height: auto;
+  }
+  body .wrap .card .tag {
+    font-size: 14px;
+    width: 100%;
+  }
+  body .Footer_zone {
+    max-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .Footer_zone .Footer_elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .Footer_zone .FT_Text_Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
   }
-  .Footer_zone .SocialMediaBox {
+  body .Footer_zone .SocialMediaBox {
     display: flex;
+    margin-top: 20px;
     flex-direction: column;
     align-items: center;
   }

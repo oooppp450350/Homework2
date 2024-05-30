@@ -9,15 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="all.scss">
 <link rel="stylesheet" href="all.css">
 </head>
 <body>
     <div class="header">
       <a href="#" class="logo"><img src="./img/logo.png" alt="LOGO"  ></a>
         
-        <nav>
-            <ul class="menu">
+            <ul class="Nav-bar">
                 <li><a href="#" class="navitem">首頁</a>
                   
                   <span class=" Border lt">
@@ -75,7 +73,13 @@
 
                 </li>
             </ul>
-        </nav>
+        
+        <div class="hamburger close">
+        
+          <img src="./img/IconHamberguer.svg"  alt="漢堡選單 " class="hamburger-menu btn">
+          <img src="./img/IconClose.svg" alt="打叉關閉" class="hamburger-close close btn">
+
+      </div>
 
     </div>
     <div class="HeroSection">
@@ -215,5 +219,7 @@
       </div>
   
       </div>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <script src="all.js"></script>
 </body>
 </html>
