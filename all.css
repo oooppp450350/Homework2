@@ -23,6 +23,9 @@ body .header {
 body .header .close {
   display: none;
 }
+body .header .MobileMenu {
+  display: none;
+}
 body .Nav-bar {
   position: relative;
   display: flex;
