@@ -215,7 +215,7 @@ body{
     }
     }
   //中間的卡片
-  .wrap{
+  .container{
     margin-top: 72px;
     max-width: 1920px;
    justify-content: center;
@@ -434,17 +434,18 @@ body{
       // width: 100%;
       blockquote{
         
-        width: 100%;
+        width: 300px;
         display: flex;
-        flex-direction: column;
+        
         flex-wrap: wrap; 
+        margin-bottom: 40px;
         .quote-left{
           display: block;
           // position: absolute;
           // // top: -40px;
           // // left: -10px;
           // top: 50%;
-          left: 45%;
+          left: 40%;
         }
         .quote-right{
           display: none;
@@ -459,23 +460,27 @@ body{
       // max-width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      
+      text-align: center;
       padding: 0px 20px 30px 30px;
     }
 
 
     }
-    .wrap{
+    .container{
       display: flex;
       max-width: 100%;
       flex-direction: column;
       align-items: center;
+      flex-wrap: wrap;
       // justify-content: center;
 
 
       .card{
-        width: 80%;
+        padding-right: 0px;
+        width: 380px;
         align-self: center;
+        
         img{
 
           width: 100%;
@@ -483,8 +488,12 @@ body{
           
         }
         .tag{
-          font-size: 14px;
-          width: 100%;
+          font-size: 12px;
+          display: flex;
+          flex-wrap: wrap;
+         li{
+          margin-right: 8px;
+         }
         }
       }
 
@@ -505,6 +514,7 @@ body{
   
       .FT_Text_Box{
         //如何調整background-image的圖片大小
+        font-size: 16px;
         display: flex;
         flex-direction: column;
         align-items: center;
