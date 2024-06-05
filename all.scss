@@ -478,7 +478,7 @@ body{
 
       .card{
         padding-right: 0px;
-        width: 380px;
+        max-width: 350px;
         align-self: center;
         
         img{
@@ -491,9 +491,11 @@ body{
           font-size: 12px;
           display: flex;
           flex-wrap: wrap;
-         li{
-          margin-right: 8px;
-         }
+        
+          .centertags{
+            margin: 0 4px;
+          }
+         
         }
       }
 

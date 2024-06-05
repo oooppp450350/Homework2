@@ -372,7 +372,7 @@ body .Nav-bar li:hover .rb {
   }
   body .container .card {
     padding-right: 0px;
-    width: 380px;
+    max-width: 350px;
     align-self: center;
   }
   body .container .card img {
@@ -384,8 +384,8 @@ body .Nav-bar li:hover .rb {
     display: flex;
     flex-wrap: wrap;
   }
-  body .container .card .tag li {
-    margin-right: 8px;
+  body .container .card .tag .centertags {
+    margin: 0 4px;
   }
   body .Footer_zone {
     max-width: 100%;
