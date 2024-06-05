@@ -224,10 +224,10 @@ body{
     
 
      .card{
-        padding-right: 24px;
-        padding-bottom: 80px;
+        margin-right: 24px;
+        margin-bottom: 80px;
         img{
-            width: 636px;
+            max-width: 636px;
             height: 400px;
             border-radius: 8px;
             margin-bottom: 16px;
@@ -253,6 +253,7 @@ body{
             margin-left: 16px;
             font-family: "Noto Sans TC", sans-serif;    
             display: flex;
+            flex-wrap: wrap;
            justify-content: start;
             li{
                 
@@ -434,7 +435,7 @@ body{
       // width: 100%;
       blockquote{
         
-        width: 300px;
+        max-width: 300px;
         display: flex;
         
         flex-wrap: wrap; 
@@ -469,7 +470,7 @@ body{
     }
     .container{
       display: flex;
-      max-width: 100%;
+      width: 100%;
       flex-direction: column;
       align-items: center;
       flex-wrap: wrap;
@@ -477,23 +478,34 @@ body{
 
 
       .card{
-        padding-right: 0px;
-        max-width: 350px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 351px;
+        border-radius: 8px;
+        border: 0.55px solid #F1F1F1;
         align-self: center;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+
         
         img{
-
-          width: 100%;
+          max-width:100%;
+          
           height: auto;
           
         }
-        .tag{
+        .tags{
           font-size: 12px;
           display: flex;
           flex-wrap: wrap;
-        
-          .centertags{
-            margin: 0 4px;
+          
+          li{
+            margin-right: 8px;
+            margin-bottom: 8px;
+          }
+
+
+
           }
          
         }
@@ -533,5 +545,5 @@ body{
     }
 
  }
-  }
+  
 
